@@ -1,0 +1,80 @@
+{
+  "version": "1",
+  "metadata": {
+    "marimo_version": "0.25.1",
+    "script_metadata_hash": null
+  },
+  "cells": [
+    {
+      "id": "Hbol",
+      "code_hash": "1d0db38904205bec4d6f6f6a1f6cec3e",
+      "outputs": [],
+      "console": []
+    },
+    {
+      "id": "MJUe",
+      "code_hash": "6ebeb14c76081f869f5b99735c1c4775",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h1 id=\"in-class-competition-home-credit-default-risk\">In-class Competition: Home Credit Default Risk</h1>\n<h2 id=\"gci-global-2026\">GCI Global 2026</h2>\n<h3 id=\"competition-starts-october-2nd\">Competition Starts: October 2nd</h3>\n<h3 id=\"competition-ends-november-20th-100am-utc\">Competition Ends: November 20th 1:00AM UTC</h3>\n<h3 id=\"ranking-announcement-december-17th-session-14\">Ranking Announcement: December 17th (Session 14)</h3></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "vblA",
+      "code_hash": "b2d66b2e313ae6833bc77cf04102d009",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"about-the-assignment\">About the Assignment</h2>\n<hr />\n<span class=\"paragraph\">In this competition, you will work on the <strong>\u201cHome Credit Default Risk\u201d</strong> competition, which was originally held on Kaggle in 2018 [<a href=\"https://www.kaggle.com/c/home-credit-default-risk/overview/description\" rel=\"noopener noreferrer\" target=\"_blank\">1</a>]. While the original competition provided multiple datasets, this competition will use only a subset of them.</span>\n<span class=\"paragraph\">The goal of this competition is to <strong>predict whether a given data entry (representing a customer) is likely to default (= fail to make a required payment) on their loan based on a variety of customer data provided</strong>. Your task is to create a machine learning model that best predicts the <strong>probability of default for each customer</strong>.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "bkHC",
+      "code_hash": "2115767c2b337902745b99fd4622e0a5",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"how-to-get-started\">How to Get Started</h2>\n<hr />\n<h3 id=\"data\">Data</h3>\n<span class=\"paragraph\">Once you unzip the <code>competition.zip</code> file, you should see the following files inside <code>competition</code> folder:</span>\n<ul>\n<li><code>README.ipynb</code>: This notebook</li>\n<li><code>tutorial.ipynb</code>: Tutorial notebook to get started on the competition</li>\n<li><code>HomeCredit_columns_description.xlsx</code>: Descriptions about the dataset</li>\n<li><code>input</code> folder<ul>\n<li><code>train.csv</code>: Data to <strong>train</strong> your own machine learning model<ul>\n<li><code>TAREGET</code> column is the target variable<ul>\n<li><code>1</code> indicates payment difficulties (default)</li>\n<li><code>0</code> indicates no payment difficulties</li>\n</ul>\n</li>\n<li>All other columns are explanatory variables</li>\n</ul>\n</li>\n<li><code>test.csv</code>: Data to <strong>evaluate</strong> your trained model. You will be competing to achieve higher prediction accuracy on this data.</li>\n<li><code>sample_submission.csv</code>: Example of the CSV file to submit</li>\n</ul>\n</li>\n</ul>\n<h3 id=\"first-steps\">First Steps</h3>\n<span class=\"paragraph\">Open the <code>tutorial.ipynb</code> and run all cells. This will create a new file, <code>output/submission.csv</code>. Download the file to your PC, then upload on Omnicampus. You should then be able to see your score on the leaderboard.</span>\n<h3 id=\"how-to-improve-your-model\">How to Improve Your Model</h3>\n<span class=\"paragraph\">Here are some tips to get a higher ranking on the competition:</span>\n<ul class=\"task-list\">\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> <strong>Step 1: Understand the data using visualizations</strong></li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> <strong>Step 2: Preprocess the data</strong><ul>\n<li>Decide what preprocessing is needed based on your findings from Step 1</li>\n<li>The tutorial only uses 5 features to create the model, so try adding more features</li>\n</ul>\n</li>\n<li class=\"task-list-item\"><input type=\"checkbox\" disabled/> <strong>Step 3: Improve your model</strong><ul>\n<li>Optimize the hyperparameters of your model</li>\n<li>Explore different models</li>\n</ul>\n</li>\n</ul>\n<span class=\"paragraph\">We will also share some techniques you can use in lectures and office hours, so stay tuned!</span></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "lEQa",
+      "code_hash": "2425ae3622d4870076d985f19243d336",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"evaluation\">Evaluation</h2>\n<hr />\n<h3 id=\"evaluation-metric\">Evaluation Metric</h3>\n<span class=\"paragraph\">The competition will be judged based on the <a href=\"https://en.wikipedia.org/wiki/Receiver_operating_characteristic\" rel=\"noopener noreferrer\" target=\"_blank\">Area Under the Curve (AUC) of the ROC curve </a> between the predicted probabilities and the ground truth for the test data.</span>\n<h3 id=\"submission\">Submission</h3>\n<span class=\"paragraph\">Predictions must be submitted via the <strong>Omnicampus</strong> platform. The format of the submitted data should be a CSV file as shown below.</span>\n<table>\n<thead>\n<tr>\n<th>SK_ID_CURR</th>\n<th>TARGET</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>171202</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>171203</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>171204</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>\u2026</td>\n<td>\u2026</td>\n</tr>\n<tr>\n<td>232699</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>232700</td>\n<td>0.5</td>\n</tr>\n<tr>\n<td>232701</td>\n<td>0.5</td>\n</tr>\n</tbody>\n</table>\n<span class=\"paragraph\">Please follow the format shown in <strong>sample_submission.csv</strong>. Submissions not adhering to this format will receive a score of -1, so please check your file format if you encounter this issue.</span>\n<h3 id=\"scoring\">Scoring</h3>\n<span class=\"paragraph\">During the competition period, scoring will be conducted on a subset of the test data to prevent \"leaderboard overfitting\". The leaderboard on Omnicampus will display your scores based on these interim results. This leaderboard is referred to as the <strong>Public Leaderboard</strong>.</span>\n<span class=\"paragraph\">After the competition ends, final scoring will be performed on the entire test data. The final rankings will be determined based on this comprehensive evaluation. The leaderboard generated from this final scoring is referred to as the <strong>Private Leaderboard</strong>.</span>\n<span class=\"paragraph\"><strong>Note:</strong></span>\n<ul>\n<li>You can submit as many times as you want. However, the final rankings will be determined based on your <strong>last submitted file</strong>.</li>\n<li>It may take <strong>several minutes to score your submission</strong>. Please make sure to check if the scoring timestamp has been updated. If not, please wait patiently and try reloading the page.</li>\n<li><strong>If you wish to be considered for Honors or Outstanding Student, you are required to submit code that can reproduce the CSV file you submitted.</strong></li>\n</ul></span>"
+          }
+        }
+      ],
+      "console": []
+    },
+    {
+      "id": "PKri",
+      "code_hash": "b3a89e33d2eea09b12fb31c7cd905989",
+      "outputs": [
+        {
+          "type": "data",
+          "data": {
+            "text/markdown": "<span class=\"markdown prose dark:prose-invert contents\"><h2 id=\"rules\">Rules \ud83d\udea8</h2>\n<hr />\n<ul>\n<li><strong>Prohibition of External Data Usage</strong></li>\n</ul>\n<span class=\"paragraph\">No external data may be used at any stage of the analysis. You must rely solely on the provided datasets (<code>input/train.csv</code> and <code>input/test.csv</code>).</span>\n<ul>\n<li><strong>Prohibition of Hand-Labeling</strong></li>\n</ul>\n<span class=\"paragraph\">Creating predictions manually instead of using a model is referred to as Hand-Labeling, and it is prohibited in most data science competitions. This rule also applies to this competition, prohibiting Hand-Labeling for all or part of the test data. <strong>Making manual decisions for part of the predictions</strong> based on rules or specific conditions derived from EDA (Exploratory Data Analysis) also falls under Hand-Labeling. All predictions must be generated by a model, and manual predictions are not permitted. Data processing must be based on reproducible methods, and the submitted predictions must be <strong>automatically generated</strong> by a model that can also be applied to other data with similar characteristics.</span>\n<ul>\n<li><strong>Ensuring Reproducibility</strong></li>\n</ul>\n<span class=\"paragraph\">Ensure reproducibility of your predictions as much as possible. To achieve this, it is essential to <strong>set seed values for random number generation</strong>.</span>\n<span class=\"paragraph\">The phrase \"as much as possible\" is used because there are situations where reproducibility cannot be fully guaranteed. For example, recent updates to the PyTorch deep learning framework have caused overall precision to decrease. In such cases, reproducing predictions made with an earlier version would require downgrading the framework. However, for this competition, such measures are not required to ensure reproducibility.</span>\n<ul>\n<li><strong>Permission for Private Sharing</strong></li>\n</ul>\n<span class=\"paragraph\">In data science competitions, private information sharing is typically strictly regulated from a fairness perspective. In most cases, information sharing within a team is only permitted when the team formation is declared through official channels. Personal information sharing outside the team, referred to as <strong>Private Sharing</strong>, is strictly prohibited.</span>\n<span class=\"paragraph\">However, since this competition is positioned as a tutorial for beginners, the Private Sharing prohibition will not be applied. If you have experienced individuals nearby, you are encouraged to actively seek their advice, and you may also exchange information and discuss with other participants online. When engaging in online discussions with other participants, please try to conduct these interactions in public forums rather than private channels, ensuring that all participants can share insights.</span>\n<ul>\n<li><strong>Citing Original Sources (Reference Code)</strong></li>\n</ul>\n<span class=\"paragraph\">This competition has numerous high-quality and informative notebooks reported on the internet. Exploring such excellent approaches and deciphering code is also a form of learning, so please feel free to reference them. There is absolutely no problem with referencing others' code.</span>\n<span class=\"paragraph\">From an educational standpoint, GCI distinguishes between one's own work and citations. Therefore, when you quote code, please explicitly indicate the original source. For top-ranking participants in this competition, code disclosure is required. If it is discovered during this disclosure that the original source was not cited, and the code is clearly from another source, there is a possibility that the prize may be revoked. Therefore, it is recommended to keep a record of the notebooks you referenced to track which codes you have used.</span></span>"
+          }
+        }
+      ],
+      "console": []
+    }
+  ]
+}
